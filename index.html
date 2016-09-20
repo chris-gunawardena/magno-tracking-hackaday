@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="test_files/6dd96b5ab5.js" type="text/javascript"></script><script src="test_files/nr-963.js"></script><script src="test_files/analytics.js" async=""></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Absolute position tracking using iPhone magnetometer | chris.gunawardena</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://chris.gunawardena.id.au/xmlrpc.php">
+<link rel="shortcut icon" href="http://chris.gunawardena.id.au/favicon.ico">
+
+<link rel="alternate" type="application/rss+xml" title="chris.gunawardena » Feed" href="http://chris.gunawardena.id.au/feed/">
+<link rel="alternate" type="application/rss+xml" title="chris.gunawardena » Comments Feed" href="http://chris.gunawardena.id.au/comments/feed/">
+		<script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/chris.gunawardena.id.au\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5"}};!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+		<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+<link rel="stylesheet" id="writr-montserrat-css" href="test_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="test_files/A_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="writr-style-css" href="test_files/A.css" type="text/css" media="all">
+<style id="writr-wider-style-css" media="all">@media only screen and (min-width:1220px){#page{width:1200px}#page:before{width:800px}.content-area{width:800px}.entry-thumbnail{width:720px;margin:0 auto}.entry-attachment .attachment{width:800px}.video-wrapper .video-player{max-width:720px}}@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}.css3-blink{-webkit-animation-name:blinker;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:cubic-bezier(1.0,0,0,1.0);-webkit-animation-duration:1s}</style>
+<link rel="stylesheet" id="upprev-css-css" href="test_files/upprev.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="test_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript">var iworks_upprev={animation:'flyout',position:'right',offset_percent:75,offset_element:'#comments',css_width:360,css_side:5,compare:'simple',url_new_window:0,ga_track_views:1,ga_track_clicks:1,ga_opt_noninteraction:1,title:'Absolute position tracking using iPhone magnetometer'};</script>
+<script type="text/javascript" src="test_files/jquery.html"></script>
+<script type="text/javascript" src="test_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="test_files/related-posts.js"></script>
+<script type="text/javascript" src="test_files/upprev.js"></script>
+<link rel="https://api.w.org/" href="http://chris.gunawardena.id.au/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://chris.gunawardena.id.au/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://chris.gunawardena.id.au/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Planning Poker with WebGL and three.js" href="http://chris.gunawardena.id.au/software-development/planning-poker-with-webgl-and-three-js/">
+<meta name="generator" content="WordPress 4.5">
+<link rel="canonical" href="http://chris.gunawardena.id.au/software-development/absolute-position-tracking-using-iphone-magnetometer/">
+<link rel="shortlink" href="http://wp.me/p4pmvy-4W">
+<link rel="alternate" type="application/json+oembed" href="http://chris.gunawardena.id.au/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fchris.gunawardena.id.au%2Fsoftware-development%2Fabsolute-position-tracking-using-iphone-magnetometer%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://chris.gunawardena.id.au/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fchris.gunawardena.id.au%2Fsoftware-development%2Fabsolute-position-tracking-using-iphone-magnetometer%2F&amp;format=xml">
+		<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important}</style>
+			<style type="text/css">.site-title a,.site-description{color:#d6d6d6}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background{background-color:#212121}</style>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Absolute position tracking using iPhone magnetometer">
+<meta property="og:url" content="http://chris.gunawardena.id.au/software-development/absolute-position-tracking-using-iphone-magnetometer/">
+<meta property="og:description" content="A recent project I was working on required absolute positioning and while waiting for Valves lighthouse and Facebooks to open source it's tracking solutions I thought I'd take a primitive stab at E...">
+<meta property="article:published_time" content="2016-09-05T08:07:59+00:00">
+<meta property="article:modified_time" content="2016-09-05T13:56:52+00:00">
+<meta property="article:author" content="http://chris.gunawardena.id.au/author/chris/">
+<meta property="og:site_name" content="chris.gunawardena">
+<meta property="og:image" content="http://chris.gunawardena.id.au/wp-content/uploads/2016/09/IMG_1918.jpg">
+<meta name="twitter:site" content="@jetpack">
+<meta name="twitter:image:src" content="http://chris.gunawardena.id.au/wp-content/uploads/2016/09/IMG_1918.jpg?w=640">
+<meta name="twitter:card" content="summary_large_image">
+<style type="text/css">#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block}</style>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-48666622-1','gunawardena.id.au');ga('send','pageview');</script>
+<script charset="utf-8" src="test_files/embed-controller.js" async="" type="text/javascript"></script><style type="text/css">.imgur-embed-iframe-pub { box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10); border: 1px solid #ddd; border-radius: 2px;}</style><style type="text/css">#imgur-embed-iframe-pub-a-U8LJy { height: 493px !important;width:460px !important;}</style></head>
+
+<body class="singular single single-post postid-306 single-format-standard custom-background sidebar-closed">
+<div id="page" class="hfeed site">
+		<a id="sidebar-toggle" href="#" title="Open sidebar"><span class="genericon genericon-close"><span class="screen-reader-text">Open sidebar</span></span></a>
+	<div class="sidebar-toggle-overlay"></div>
+	<header id="masthead" class="site-header" role="banner">
+				<div class="site-branding">
+			<h1 class="site-title"><a href="http://chris.gunawardena.id.au/" title="chris.gunawardena" rel="home">chris.gunawardena</a></h1>
+			<h2 class="site-description"></h2>
+		</div>
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h1 class="menu-toggle genericon genericon-menu"><span class="screen-reader-text">Menu</span></h1>
+			<div class="screen-reader-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu nav-menu"><li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-home"><a href="http://chris.gunawardena.id.au/">Blog</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://chris.gunawardena.id.au/about/">About</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://chris.gunawardena.id.au/contact/">Contact</a></li></ul></div>		</nav><!-- #site-navigation -->
+			</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-306" class="post-306 post type-post status-publish format-standard has-post-thumbnail hentry category-arduino category-electronics category-mobile category-software-development category-swift tag-attiny tag-ios tag-swift">
+	<header class="entry-header">
+		<h1 class="entry-title">Absolute position tracking using iPhone magnetometer</h1>
+				<div class="entry-thumbnail">
+			<img scale="0" src="test_files/IMG_1918.jpg" class="attachment-featured-image size-featured-image wp-post-image" alt="IMG_1918" pagespeed_url_hash="2068221799" height="494" width="800">		</div><!-- .post-thumbnail -->
+		
+					<span class="entry-format-badge genericon genericon-standard"><span class="screen-reader-text">Standard</span></span>
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>A recent project I was working on required absolute positioning and
+ while waiting for Valves lighthouse and Facebooks to open source it’s 
+tracking solutions I thought I’d take a primitive stab at EM (electro 
+magnetic) positioning using a phone magnetometer purely for the purpose 
+of learning the challenges involved. I’m an experienced software 
+developer and a hobbyist hardware hacker, so I tried solving most 
+problems using software where possible .</p>
+<p>EM tracking has an advantage over optical tracking over that it 
+doesn’t need line of sight but most optical tracking systems have 
+overcome this limitation by using two base stations.</p>
+<p>All professional EM tracking solutions like products from Polhemus, 
+Ascension and Razor Hydra all use alternating EM fields and a receiving 
+coil to measure induced currents and this allows for turning out or 
+filtering out everything except for the carrier frequency. The down side
+ is the you need more complex hardware/circuits like signal 
+generators/oscillators for the transmitter and with op-amps with 
+high/low pass filters etc on the receiver.</p>
+<p>So for stage one I decided to just use the magnetometer sensor on my 
+phone and see how far I can get. As the first step I made a quick 
+prototype using my phone, a relay switch for the transmitter coil and a 
+9v battery. Due to inverse square law of magnetic field propagation I 
+was only able to get accurate readings up to a centimeter or two.</p>
+<p><img scale="0" class="alignnone size-full wp-image-308" src="test_files/IMG_1911.jpg" alt="IMG_1911" pagespeed_url_hash="6722352" height="2448" width="3264"></p>
+<p>Always&nbsp;try&nbsp;brute force first, I had&nbsp;to push as much 
+current as possible and needed a bigger coil to create a much stronger 
+magnetic field. First part is easy, 9v batteries are cheap and connect 4
+ in series and voila you have 36v.</p>
+<p>The later is tricky while the EM field generated goes up with number 
+of turns, the longer wire also increases the resistance which decreasing
+ the current passing through. I ended up using a 100MH inductor with 76 
+Ohm which seems to be a good balance between generated EM field and 
+resistance. This setup created a strong enough field to be detectable up
+ to 5-6 cm which was enough for my project.</p>
+<p>The coil would overheat quickly which can be solved by pulsing the 
+coil only long enough for the magnetometer to register it, which turned 
+out to be around 20ms for the one on iPhone 6. Trilateration in 3d 
+requires three points of reference so I got three of these coils 
+transmitting 20ms seconds at a time with the help of a ATTiny and a few 
+MOSFETS.</p>
+<p><iframe src="test_files/embed.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="448" width="650"></iframe><br>
+<img scale="0" class="alignnone size-full wp-image-310" src="test_files/3182x1775xIMG_1915-1.jpg" alt="IMG_1915" pagespeed_url_hash="3254929780" height="1775" width="3182"></p>
+<p>Due to the lack of wired open input/output ports on the iPhone and 
+lack of wifi/bluetooth on the AtTiny I decided to use a sync cycle to 
+figure out coil is transmitting.</p>
+<p>Transmit pulses would be evenly spaced with a empty pulse used as a 
+sync pulse. The rest was signal processing on the iphone, which turned 
+out to be a lot harder than I thought it would be but creating a system 
+to record and playback data so I can rerun and debug with exact dataset 
+helped a lot. Also adding a real time charts and a 3d scene to the 
+iphone app was a great way to visualise what was going on. Another good 
+way to compare the results of two methods (eg: different noise filtering
+ algorithms) was to record videos of each one runnng in the simulator 
+with test data and play it back side by side.</p>
+<p><img scale="0" class="alignnone size-medium wp-image-312" src="test_files/257x300xSimulator-Screen-Shot-31-Aug-2016-7.png" alt="Simulator Screen Shot 31 Aug 2016, 7.39.26 PM" pagespeed_url_hash="3186872401" height="300" width="257"></p>
+<p>Since the phone is moving all the time, which changes the earth’s 
+magnetic field, each reading had to be normalised against the background
+ using the interquartile_mean.</p>
+<p>In order to identify which&nbsp;coil is transmitting, find the 
+highest peak and then find 3 other transmissions equal distance from it,
+ since the time between pulses are known constant, this will give us 4 
+values and the lowest one will be the sync cycle which can be used to 
+figure out which pulse came from which coil.</p>
+<p><img scale="0" class="alignnone size-full wp-image-313" src="test_files/GRAPH.png" alt="GRAPH" pagespeed_url_hash="222732052" height="370" width="1830"></p>
+<p>Now the intensity at x distance from each coil can be turned into 
+distance from coil based on inverse square law. This is finally used to 
+trilateration and find the absolute coordinates in 3d space relative to 
+the transmitters.</p>
+<p>So how well does it track? The answer is not very well, but in true 
+sprit of brute forcing with more power, I ordered some, more 
+accurate&nbsp;MLX90393 magnetometers and hope to combine input from all 3
+ for a more accurate result and&nbsp;also ordered some A23 12v batteries
+ to&nbsp;push the voltage up to 48v which should improving tracking 
+around the edges.</p>
+<p><iframe src="test_files/EHWGtElzWaY.html" allowfullscreen="allowfullscreen" frameborder="0" height="315" width="560"></iframe></p>
+<p>One more video:&nbsp;https://youtu.be/EHWGtElzWaY</p>
+<p>iOS app swift source code:<br>
+https://github.com/chris-gunawardena/Absolute-position-EM-tracking-using-iPhone-magnetometer</p>
+<p>Arduino Transmitter source code:</p>
+<style>.gist table{margin-bottom:0}</style>
+<p><script src="test_files/45129959e3721548d28e10c67ec49de7.js"></script><link rel="stylesheet" href="test_files/gist-embed-de68fecedb7588e2c9c61c68ea84191c5cef4febbe0dec0ea.css"></p><div id="gist39423926" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-tx-ino" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-arduino">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-tx-ino-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-tx-ino-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                             +-\/-+</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-tx-ino-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                  (+)  VCC  1|    |14  GND (-)</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-tx-ino-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//             coil 1    A00  2|    |13  A10  low_pin</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-tx-ino-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//             coil 2    A01  3|    |12  A09  high_pin</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-tx-ino-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                     RESET  4|    |11  A08  </span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-tx-ino-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//             coil 3    A02  5|    |10  A07  button_input</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-tx-ino-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                       A03  6|    |9   A06  led_cathode</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-tx-ino-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                       A04  7|    |8   A05  led_anode</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-tx-ino-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">//                             +----+</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-tx-ino-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> low_pin = <span class="pl-c1">10</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-tx-ino-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> high_pin = <span class="pl-c1">9</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-tx-ino-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> button_input = <span class="pl-c1">7</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-tx-ino-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> led_anode = <span class="pl-c1">5</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-tx-ino-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> led_cathode = <span class="pl-c1">6</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-tx-ino-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-tx-ino-LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">setup</span>() {</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-tx-ino-LC17" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(<span class="pl-c1">0</span>, OUTPUT);  <span class="pl-c1">pinMode</span>(<span class="pl-c1">1</span>, OUTPUT);  <span class="pl-c1">pinMode</span>(<span class="pl-c1">2</span>, OUTPUT);</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-tx-ino-LC18" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-tx-ino-LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">// used for led</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-tx-ino-LC20" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(led_anode, OUTPUT); <span class="pl-c1">digitalWrite</span>(led_anode, LOW); </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-tx-ino-LC21" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(led_cathode, OUTPUT); <span class="pl-c1">digitalWrite</span>(led_cathode, LOW); </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-tx-ino-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-tx-ino-LC23" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">// button </span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-tx-ino-LC24" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(button_input, INPUT);  </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-tx-ino-LC25" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(low_pin, OUTPUT);  <span class="pl-c1">digitalWrite</span>(low_pin, LOW); </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-tx-ino-LC26" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">pinMode</span>(high_pin, OUTPUT); <span class="pl-c1">digitalWrite</span>(high_pin, HIGH); </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-tx-ino-LC27" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-tx-ino-LC28" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-tx-ino-LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> on_time = <span class="pl-c1">25</span>; <span class="pl-c">//in ms</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-tx-ino-LC30" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> refresh_rate = <span class="pl-c1">1</span>; <span class="pl-c">// per second</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-tx-ino-LC31" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> pins = <span class="pl-c1">3</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-tx-ino-LC32" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> off_time = (<span class="pl-c1">1000</span> / (refresh_rate * (pins + <span class="pl-c1">1</span>))) - on_time; <span class="pl-c">//in ms (1: 225/25 2:100/25)</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-tx-ino-LC33" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-tx-ino-LC34" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">loop</span>() {</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-tx-ino-LC35" class="blob-code blob-code-inner js-file-line">   <span class="pl-k">for</span> (<span class="pl-k">int</span> pin = <span class="pl-c1">0</span>; pin &lt;= pins; pin++) {</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-tx-ino-LC36" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">digitalWrite</span>(pin, HIGH);</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-tx-ino-LC37" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">delay</span>(on_time);</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-tx-ino-LC38" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">digitalWrite</span>(pin, LOW); </td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-tx-ino-LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">delay</span>(off_time);</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-tx-ino-LC40" class="blob-code blob-code-inner js-file-line">   }</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-tx-ino-LC41" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-tx-ino-LC42" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span> (<span class="pl-c1">digitalRead</span>(button_input) == HIGH) {</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-tx-ino-LC43" class="blob-code blob-code-inner js-file-line">     on_time = on_time + <span class="pl-c1">5</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-tx-ino-LC44" class="blob-code blob-code-inner js-file-line">     off_time = (<span class="pl-c1">1000</span> / (refresh_rate * (pins + <span class="pl-c1">1</span>))) - on_time; <span class="pl-c">//in ms</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-tx-ino-LC45" class="blob-code blob-code-inner js-file-line">     <span class="pl-k">int</span> blink_num = on_time / <span class="pl-c1">5</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-tx-ino-LC46" class="blob-code blob-code-inner js-file-line">     <span class="pl-k">for</span> (<span class="pl-k">int</span> i = <span class="pl-c1">0</span>; i &lt; blink_num; i++) {</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-tx-ino-LC47" class="blob-code blob-code-inner js-file-line">       <span class="pl-c1">digitalWrite</span>(led_anode, HIGH);   <span class="pl-c">// turn the LED on (HIGH is the voltage level)</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-tx-ino-LC48" class="blob-code blob-code-inner js-file-line">       <span class="pl-c1">delay</span>(<span class="pl-c1">50</span>);              <span class="pl-c">// wait for a second</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-tx-ino-LC49" class="blob-code blob-code-inner js-file-line">       <span class="pl-c1">digitalWrite</span>(led_anode, LOW);    <span class="pl-c">// turn the LED off by making the voltage LOW</span></td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-tx-ino-LC50" class="blob-code blob-code-inner js-file-line">       <span class="pl-c1">delay</span>(<span class="pl-c1">200</span>);</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-tx-ino-LC51" class="blob-code blob-code-inner js-file-line">     }</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-tx-ino-LC52" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-tx-ino-LC53" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-tx-ino-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-tx-ino-LC54" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/chris-gunawardena/45129959e3721548d28e10c67ec49de7/raw/678833dfb2b8924f6a1f730680bff1cdbde88bd8/tx.ino" style="float:right">view raw</a>
+        <a href="https://gist.github.com/chris-gunawardena/45129959e3721548d28e10c67ec49de7#file-tx-ino">tx.ino</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<p>Todo:<br>
+Just .</p>
+<p>References:</p>
+<div class="video-wrapper">
+<blockquote style="display: none;" data-secret="ojGnZVfw7v" class="wp-embedded-content"><a href="http://www.acasper.org/2012/02/19/3d-magnetic-localization/">3D Magnetic Localization</a><p></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" src="test_files/a.html" data-secret="ojGnZVfw7v" title="Embedded WordPress Post" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="240" width="600"></iframe></p></div>
+<p>https://hackaday.io/project/11865-3d-magnetic-field-scanner<br>
+http://rose.eu.org/2014/tag/plume<br>
+https://web.archive.org/web/20151002101421/http://home.comcast.net/~traneus/dry_model_1_isca_tracker_electronics.htm</p>
+<div class="video-wrapper">
+<iframe id="imgur-embed-iframe-pub-a-U8LJy" src="test_files/embed_002.html" scrolling="no" class="imgur-embed-iframe-pub imgur-embed-iframe-pub-a-U8LJy-true-460" style="height: 500px; width: 460px; margin: 10px 0px; padding: 0px;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+<p><script async="" src="test_files/embed.js" charset="utf-8"></script></p></div>
+<p>http://www.abrazol.com/books/signals/<br>
+https://trmm.net/Lighthouse<br>
+https://en.wikipedia.org/wiki/Trilateration<br>
+https://www.engineeringforchange.org/uploads/activity/183/183/295/1311176446080/Extremely_low_frequency_electromagnetic_field_detectors_intermediate_Report.pdf<br>
+http://www.na-mic.org/Wiki/index.php/Open_Source_Electromagnetic_Trackers<br>
+https://airwebreathe.org.uk/doku.php?id=fpga_fan_controller<br>
+https://hackaday.io/project/12352-low-field-mri-continued</p>
+
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+		<ul class="clear">
+			
+	<li class="date-meta">
+		<div class="genericon genericon-month"></div>
+		<span class="screen-reader-text">Date</span>
+		<a href="http://chris.gunawardena.id.au/software-development/absolute-position-tracking-using-iphone-magnetometer/" rel="bookmark" title="6:07 pm">5th September 2016</a>
+	</li>
+
+	
+		<li class="tags-meta">
+			<div class="genericon genericon-tag"></div>
+			<span class="screen-reader-text">Tags</span>
+			<a href="http://chris.gunawardena.id.au/tag/attiny/" rel="tag">Attiny</a>, <a href="http://chris.gunawardena.id.au/tag/ios/" rel="tag">ios</a>, <a href="http://chris.gunawardena.id.au/tag/swift/" rel="tag">swift</a>		</li>
+
+			</ul>
+
+	</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+				<nav role="navigation" id="nav-below" class="post-navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="nav-previous"><a href="http://chris.gunawardena.id.au/software-development/planning-poker-with-webgl-and-three-js/" rel="prev"><span class="genericon genericon-leftarrow"></span> Planning Poker with WebGL and three.js</a></div>		
+	
+	</nav><!-- #nav-below -->
+	
+			
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+
+	<div id="secondary" class="widget-area" role="complementary">
+				<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://chris.gunawardena.id.au/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input class="search-field" placeholder="Search …" name="s" title="Search for:" type="search">
+	</label>
+	<input class="search-submit" value="" type="submit">
+</form>
+</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h1 class="widget-title">Tags</h1><div class="tagcloud"><a href="http://chris.gunawardena.id.au/tag/agile/" class="tag-link-59 tag-link-position-1" title="2 topics" style="font-size: 16.4pt;">Agile</a>
+<a href="http://chris.gunawardena.id.au/tag/amazon/" class="tag-link-25 tag-link-position-2" title="1 topic" style="font-size: 8pt;">amazon</a>
+<a href="http://chris.gunawardena.id.au/tag/angular/" class="tag-link-51 tag-link-position-3" title="1 topic" style="font-size: 8pt;">angular</a>
+<a href="http://chris.gunawardena.id.au/tag/apache/" class="tag-link-46 tag-link-position-4" title="1 topic" style="font-size: 8pt;">Apache</a>
+<a href="http://chris.gunawardena.id.au/tag/arduino/" class="tag-link-62 tag-link-position-5" title="1 topic" style="font-size: 8pt;">Arduino</a>
+<a href="http://chris.gunawardena.id.au/tag/attiny/" class="tag-link-66 tag-link-position-6" title="1 topic" style="font-size: 8pt;">Attiny</a>
+<a href="http://chris.gunawardena.id.au/tag/aws/" class="tag-link-21 tag-link-position-7" title="2 topics" style="font-size: 16.4pt;">aws</a>
+<a href="http://chris.gunawardena.id.au/tag/casperjs/" class="tag-link-54 tag-link-position-8" title="1 topic" style="font-size: 8pt;">casperjs</a>
+<a href="http://chris.gunawardena.id.au/tag/chrome-plugin/" class="tag-link-30 tag-link-position-9" title="1 topic" style="font-size: 8pt;">Chrome plugin</a>
+<a href="http://chris.gunawardena.id.au/tag/cloud/" class="tag-link-27 tag-link-position-10" title="2 topics" style="font-size: 16.4pt;">cloud</a>
+<a href="http://chris.gunawardena.id.au/tag/devops-2/" class="tag-link-23 tag-link-position-11" title="2 topics" style="font-size: 16.4pt;">devops</a>
+<a href="http://chris.gunawardena.id.au/tag/diy/" class="tag-link-33 tag-link-position-12" title="1 topic" style="font-size: 8pt;">DIY</a>
+<a href="http://chris.gunawardena.id.au/tag/ec2/" class="tag-link-24 tag-link-position-13" title="2 topics" style="font-size: 16.4pt;">ec2</a>
+<a href="http://chris.gunawardena.id.au/tag/estimation/" class="tag-link-43 tag-link-position-14" title="1 topic" style="font-size: 8pt;">estimation</a>
+<a href="http://chris.gunawardena.id.au/tag/express/" class="tag-link-53 tag-link-position-15" title="1 topic" style="font-size: 8pt;">express</a>
+<a href="http://chris.gunawardena.id.au/tag/greasemonkey/" class="tag-link-31 tag-link-position-16" title="1 topic" style="font-size: 8pt;">Greasemonkey</a>
+<a href="http://chris.gunawardena.id.au/tag/heroku/" class="tag-link-50 tag-link-position-17" title="2 topics" style="font-size: 16.4pt;">heroku</a>
+<a href="http://chris.gunawardena.id.au/tag/ios/" class="tag-link-64 tag-link-position-18" title="1 topic" style="font-size: 8pt;">ios</a>
+<a href="http://chris.gunawardena.id.au/tag/javascript/" class="tag-link-61 tag-link-position-19" title="2 topics" style="font-size: 16.4pt;">Javascript</a>
+<a href="http://chris.gunawardena.id.au/tag/jira/" class="tag-link-57 tag-link-position-20" title="1 topic" style="font-size: 8pt;">jira</a>
+<a href="http://chris.gunawardena.id.au/tag/labs/" class="tag-link-29 tag-link-position-21" title="1 topic" style="font-size: 8pt;">labs</a>
+<a href="http://chris.gunawardena.id.au/tag/mobile/" class="tag-link-60 tag-link-position-22" title="2 topics" style="font-size: 16.4pt;">Mobile</a>
+<a href="http://chris.gunawardena.id.au/tag/mobile-web-app/" class="tag-link-44 tag-link-position-23" title="1 topic" style="font-size: 8pt;">Mobile web app</a>
+<a href="http://chris.gunawardena.id.au/tag/mongo/" class="tag-link-52 tag-link-position-24" title="1 topic" style="font-size: 8pt;">mongo</a>
+<a href="http://chris.gunawardena.id.au/tag/node/" class="tag-link-49 tag-link-position-25" title="1 topic" style="font-size: 8pt;">node</a>
+<a href="http://chris.gunawardena.id.au/tag/nodejs/" class="tag-link-55 tag-link-position-26" title="1 topic" style="font-size: 8pt;">nodejs</a>
+<a href="http://chris.gunawardena.id.au/tag/phantomjs/" class="tag-link-56 tag-link-position-27" title="1 topic" style="font-size: 8pt;">phantomjs</a>
+<a href="http://chris.gunawardena.id.au/tag/planing-poker/" class="tag-link-42 tag-link-position-28" title="1 topic" style="font-size: 8pt;">Planing poker</a>
+<a href="http://chris.gunawardena.id.au/tag/skunk-works/" class="tag-link-28 tag-link-position-29" title="1 topic" style="font-size: 8pt;">Skunk Works</a>
+<a href="http://chris.gunawardena.id.au/tag/stand-up/" class="tag-link-32 tag-link-position-30" title="1 topic" style="font-size: 8pt;">stand up</a>
+<a href="http://chris.gunawardena.id.au/tag/swift/" class="tag-link-65 tag-link-position-31" title="1 topic" style="font-size: 8pt;">swift</a>
+<a href="http://chris.gunawardena.id.au/tag/ubuntu/" class="tag-link-47 tag-link-position-32" title="1 topic" style="font-size: 8pt;">Ubuntu</a>
+<a href="http://chris.gunawardena.id.au/tag/vagrant-2/" class="tag-link-22 tag-link-position-33" title="2 topics" style="font-size: 16.4pt;">vagrant</a>
+<a href="http://chris.gunawardena.id.au/tag/vagrant-aws/" class="tag-link-26 tag-link-position-34" title="1 topic" style="font-size: 8pt;">vagrant-aws</a>
+<a href="http://chris.gunawardena.id.au/tag/web-app/" class="tag-link-45 tag-link-position-35" title="3 topics" style="font-size: 22pt;">Web app</a></div>
+</aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><a href="http://stackoverflow.com/users/1602316/chris-g">
+<img scale="0" src="test_files/1602316.png" alt="profile for Chris G at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Chris G at Stack Overflow, Q&amp;A for professional and enthusiast programmers" pagespeed_url_hash="2097731227" height="58" width="208">
+</a>
+
+</div>
+		</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-7"><a href="http://chris.gunawardena.id.au/category/software-development/agile/">Agile</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://chris.gunawardena.id.au/category/angular/">Angular</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://chris.gunawardena.id.au/category/electronics/arduino/">Arduino</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://chris.gunawardena.id.au/category/continuous-delivery/">Continuous delivery</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://chris.gunawardena.id.au/category/software-development/continuous-integration-ci/">Continuous integration (CI)</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://chris.gunawardena.id.au/category/software-development/devops/">DevOps</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://chris.gunawardena.id.au/category/electronics/">Electronics</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://chris.gunawardena.id.au/category/software-development/javascript/">Javascript</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://chris.gunawardena.id.au/category/software-development/mobile/">Mobile</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://chris.gunawardena.id.au/category/portfolio/">Portfolio</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://chris.gunawardena.id.au/category/software-development/">Software development</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://chris.gunawardena.id.au/category/software-development/swift/">Swift</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://chris.gunawardena.id.au/category/software-development/testing/">Testing</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://chris.gunawardena.id.au/category/software-development/vagrant/">Vagrant</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="http://chris.gunawardena.id.au/category/software-development/webgl/">WebGL</a>
+</li>
+		</ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://chris.gunawardena.id.au/software-development/absolute-position-tracking-using-iphone-magnetometer/">Absolute position tracking using iPhone magnetometer</a>
+						</li>
+					<li>
+				<a href="http://chris.gunawardena.id.au/software-development/planning-poker-with-webgl-and-three-js/">Planning Poker with WebGL and three.js</a>
+						</li>
+					<li>
+				<a href="http://chris.gunawardena.id.au/software-development/prepend-commit-messages-with-jira-issue-number-from-branch-name/">Prepend commit messages with JIRA issue number from branch name</a>
+						</li>
+					<li>
+				<a href="http://chris.gunawardena.id.au/software-development/jira-agile-timelapse/">JIRA Agile timelapse</a>
+						</li>
+					<li>
+				<a href="http://chris.gunawardena.id.au/software-development/debugging-client-server-requests-with-req-uest-info/">Debugging client/server requests with req.uest.info</a>
+						</li>
+				</ul>
+		</aside>		<aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="http://chris.gunawardena.id.au/wp-login.php">Log in</a></li>
+			<li><a href="http://chris.gunawardena.id.au/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://chris.gunawardena.id.au/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="http://atmelcorporation.wordpress.com/2014/06/17/tinyavr-helps-keep-the-time/" rel="external nofollow" class="url">tinyAVR helps keep the time | Bits &amp; Pieces from the Embedded Design World</a></span> on <a href="http://chris.gunawardena.id.au/software-development/building-a-clock-based-on-arduino/#comment-7">Building a clock based on Arduino</a></li><li class="recentcomments"><span class="comment-author-link">Kevin Kaostricks</span> on <a href="http://chris.gunawardena.id.au/software-development/building-a-clock-based-on-arduino/#comment-12">Building a clock based on Arduino</a></li><li class="recentcomments"><span class="comment-author-link">Chris Gunawardena</span> on <a href="http://chris.gunawardena.id.au/software-development/building-a-clock-based-on-arduino/#comment-11">Building a clock based on Arduino</a></li><li class="recentcomments"><span class="comment-author-link">miceuz</span> on <a href="http://chris.gunawardena.id.au/software-development/building-a-clock-based-on-arduino/#comment-10">Building a clock based on Arduino</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.webhostcheep.com/attiny84-powered-minimalist-led-clock/" rel="external nofollow" class="url">ATtiny84 Powered Minimalist LED Clock - Tech key | Techzone | Tech data</a></span> on <a href="http://chris.gunawardena.id.au/software-development/building-a-clock-based-on-arduino/#comment-6">Building a clock based on Arduino</a></li></ul></aside><aside id="text-2" class="widget widget_text">			<div class="textwidget"><a href="https://developer.mozilla.org/docs/javascript/?WT.mc_id=mdn15" title="MDN is Developer Powered for JavaScript docs, demos and more."><img scale="0" src="test_files/promobutton_mdn15.png" alt="MDN is Developer Powered for JavaScript docs, demos and more." pagespeed_url_hash="4195227990"></a></div>
+		</aside>			</div><!-- #secondary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<div class="site-info">
+						<!--<div><a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a></div>
+			<div>Theme: Writr by <a href="http://theme.wordpress.com/" rel="designer">Automattic</a>.</div>-->
+		</div><!--.site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	</div>
+<script type="text/javascript" src="test_files/devicepx-jetpack.js"></script>
+<script src="test_files/navigation.js"></script><script>eval(mod_pagespeed_ceM8_$f6Jy);</script>
+<script>eval(mod_pagespeed_kk05ReujWm);</script>
+<script>eval(mod_pagespeed_CtgKgQCIPQ);</script>
+<script type="text/javascript">//<![CDATA[
+!function(a,b){"use strict";function c(){if(!e){e=!0;var 
+a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 
+10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c<i.length;c++)if(d=i[c],!d.getAttribute("data-secret")){if(f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f),g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}else;}}var
+ 
+d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var
+ 
+d=c.data;if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var
+ 
+e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e<k.length;e++)k[e].style.display="none";for(e=0;e<j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g>1e3)g=1e3;else
+ 
+if(200>~~g)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);
+//]]></script>
+<script src="test_files/wp-includes_js_underscore.js"></script><script>eval(mod_pagespeed_7P2PZDlcVb);</script>
+<script>eval(mod_pagespeed_gPX9K067IE);</script>
+
+	<script src="test_files/e-201638.js" type="text/javascript"></script>
+	<script type="text/javascript">st_go({v:'ext',j:'1:3.3.3',blog:'65150068',post:'306',tz:'10'});var
+ load_cmc=function(){linktracker_init(65150068,306,2);};if(typeof 
+addLoadEvent!='undefined')addLoadEvent(load_cmc);else load_cmc();</script><img scale="0" id="wpstats" alt=":)" src="test_files/g.gif" height="5" width="6"><div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt upprev_thumbnail"><a href="http://chris.gunawardena.id.au/software-development/planning-poker-with-webgl-and-three-js/" title="Planning Poker with WebGL and three.js" class="upprev_thumbnail" rel="Absolute position tracking using iPhone magnetometer"><img scale="0" src="test_files/threejs.png" class="iworks_upprev_thumb wp-post-image" alt="WebGL three.js planning poker" title="Planning Poker with WebGL and three.js" pagespeed_url_hash="649348780" height="32" width="48"></a><h5><a href="http://chris.gunawardena.id.au/software-development/planning-poker-with-webgl-and-three-js/" rel="Absolute position tracking using iPhone magnetometer">Planning Poker with WebGL and three.js</a></h5><p>It's
+ been almost 2 years since&nbsp;the&nbsp;Planning poker mobile web 
+app&nbsp;and a lot has changed in the web landscape. WebGL has...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6dd96b5ab5","applicationID":"3255540","transactionName":"YAdbYEoDXhdSBkYPDFlNeFdMC18KHBZbCARbBw==","queueTime":0,"applicationTime":9613,"ttGuid":"","agentToken":"","atts":"TEBYFgIZTRk=","errorBeacon":"bam.nr-data.net","agent":""}</script><script pagespeed_no_defer="">//<![CDATA[
+(function(){var
+ 
+e=encodeURIComponent,f=window,h=document,m="width",n="documentElement",p="height",q="length",r="prototype",s="body",t="&",u="&ci=",w="&n=",x="&rd=",y=",",z="?",A="Content-Type",B="Microsoft.XMLHTTP",C="Msxml2.XMLHTTP",D="POST",E="application/x-www-form-urlencoded",F="img",G="input",H="load",I="oh=",J="on",K="pagespeed_url_hash",L="url=",M=function(a,c,d){if(a.addEventListener)a.addEventListener(c,d,!1);else
+ if(a.attachEvent)a.attachEvent(J+c,d);else{var 
+b=a[J+c];a[J+c]=function(){d.call(this);b&&b.call(this)}}};f.pagespeed=f.pagespeed||{};var
+ 
+N=f.pagespeed,O=function(a,c,d,b,g){this.d=a;this.f=c;this.g=d;this.a=g;this.c={height:f.innerHeight||h[n].clientHeight||h[s].clientHeight,width:f.innerWidth||h[n].clientWidth||h[s].clientWidth};this.e=b;this.b={}};O[r].j=function(a){a=a.getBoundingClientRect();return{top:a.top+(void
+ 
+0!==f.pageYOffset?f.pageYOffset:(h[n]||h[s].parentNode||h[s]).scrollTop),left:a.left+(void
+ 
+0!==f.pageXOffset?f.pageXOffset:(h[n]||h[s].parentNode||h[s]).scrollLeft)}};O[r].i=function(a){if(0>=a.offsetWidth&&0>=a.offsetHeight)return!1;a=this.j(a);var
+ 
+c=a.top.toString()+y+a.left.toString();if(this.b.hasOwnProperty(c))return!1;this.b[c]=!0;return
+ a.top<=this.c[p]&&a.left<=this.c[m]};O[r].l=function(){for(var 
+a=[F,G],c=[],d={},b=0;b<a[q];++b)for(var 
+g=h.getElementsByTagName(a[b]),k=0;k<g[q];++k){var 
+v=g[k].getAttribute(K);v&&g[k].getBoundingClientRect&&this.i(g[k])&&!(v 
+in 
+d)&&(c.push(v),d[v]=!0)}b=!1;a=I+this.g;this.a&&(a+=w+this.a);if(0!=c[q]){a+=u+e(c[0]);for(b=1;b<c[q];++b){d=y+e(c[b]);if(131072<a[q]+d[q])break;a+=d}b=!0}this.e&&(d=x+e(JSON.stringify(this.h())),131072>=a[q]+d[q]&&(a+=d),b=!0);N.criticalImagesBeaconData=a;if(b){var
+ c=this.d,b=this.f,l;if(f.XMLHttpRequest)l=new XMLHttpRequest;else 
+if(f.ActiveXObject)try{l=new ActiveXObject(C)}catch(P){try{l=new 
+ActiveXObject(B)}catch(Q){}}l&&(l.open(D,c+(-1==c.indexOf(z)?z:t)+L+e(b)),l.setRequestHeader(A,E),l.send(a))}};O[r].h=function(){for(var
+ a={},c=h.getElementsByTagName(F),d=0;d<c[q];++d){var 
+b=c[d],g=b.getAttribute(K);if("undefined"==typeof 
+b.naturalWidth||"undefined"==typeof b.naturalHeight||"undefined"==typeof
+ g)break;if("undefined"==typeof 
+a[b.src]&&0<b[m]&&0<b[p]&&0<b.naturalWidth&&0<b.naturalHeight||"undefined"!=typeof
+ 
+a[b.src]&&b[m]>=a[b.src].n&&b[p]>=a[b.src].m)a[g]={renderedWidth:b[m],renderedHeight:b[p],originalWidth:b.naturalWidth,originalHeight:b.naturalHeight}}return
+ a};N.k=function(a,c,d,b,g){var k=new 
+O(a,c,d,b,g);M(f,H,function(){f.setTimeout(function(){k.l()},0)})};N.criticalImagesBeaconInit=N.k;})();pagespeed.criticalImagesBeaconInit('/mod_pagespeed_beacon','http://chris.gunawardena.id.au/software-development/absolute-position-tracking-using-iphone-magnetometer/','WyQ3C4mRrQ',false,'X8m2zALCMh4');
+//]]></script>
+
+
+</body></html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Database Caching 7/20 queries in 0.126 seconds using apc
+Object Caching 1504/1548 objects using apc
+Application Monitoring using New Relic
+
+ Served from: chris.gunawardena.id.au @ 2016-09-20 23:58:05 by W3 Total Cache -->
